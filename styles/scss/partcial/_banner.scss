@@ -1,0 +1,121 @@
+@mixin image-icon{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+@mixin btn-custom{
+    border-radius: 20px;
+    border: none;
+    color: $secondary-color;
+    font-size: map-get($paragraph-size, small);
+    @media only screen and (min-width: 767px) {
+        font-size: map-get($paragraph-size, medium);
+    }
+
+    @media only screen and (min-width: 991px){
+        font-size: map-get($paragraph-size, large);
+    }
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0px;
+    justify-content: space-between;
+    gap: 50px;
+    @media only screen and (min-width: 991px) {
+        flex-direction: row;
+    }
+
+    &__aside1{
+        max-width: 100%;
+        @media only screen and (min-width: 991px) {
+            max-width: 50%;
+        }
+
+        &__p1{
+            color: $primary-color;
+        }
+
+        &__p2{
+            color: $secondary-color;
+            padding: 20px 0px;
+        }
+
+        &__btn1{
+            background-color: $primary-color;
+            @include btn-custom
+        }
+        &__btn2{
+            background-color: #C4C4C41A;
+            margin-left: 5%;
+            @include btn-custom;
+        }
+        
+    }
+
+    &__aside2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+   
+        &__fig{
+            border-radius: 43px;
+            background-color: $primary-color;
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            min-width: 256px;
+            position: relative;
+            
+            
+
+            &__main1{
+                width: auto;
+            }
+
+            &__img1{
+                @include image-icon;
+                position: absolute;
+                right: -50px;
+                top: 200px;
+            }
+                
+            &__img2{
+                @include image-icon;
+                position: absolute;
+                top: 200px;
+                left: -50px;
+            }
+        } 
+        
+        &__div{
+            display: flex;
+            padding: 10px;
+            justify-content: start;
+            background-color: $bg-full-transparent;
+            position: relative;
+            bottom: 40px;
+            left: -30px;
+            border-radius: 10px;
+            width: auto;
+
+            &__img{
+                width: 60px;
+                height: 60px;
+                border-radius: 10px;
+                align-items: center;
+                justify-content: center;
+                object-fit: cover;
+            }
+            &__info{
+                margin-left: 20px;
+            }
+        }
+    }
+
+
+
+} 

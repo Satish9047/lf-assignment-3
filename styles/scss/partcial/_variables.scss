@@ -1,3 +1,15 @@
+// color for text
+$primary-color: #17C2EC;
+$secondary-color: #FFFFFFB2;
+// color for header(h1)
+$title-bg-color: #0B153C;
+
+// transpaprent color that used in button
+$bg-semi-transparent: #C4C4C41A;
+$bg-full-transparent:#C4C4C433;
+
+
+// h1 text size
 $title-size: (
     "small": 24px,
     "medium": 36px,
@@ -6,6 +18,7 @@ $title-size: (
 $title-font-weight: (
     "large": 800px, 
     "small":700px);
+
 $all-font-family: Montserrat;
 
 $paragraph-size: (
@@ -14,6 +27,3 @@ $paragraph-size: (
     "large": 24px
 );
 
-$primary-color: #17C2EC;
-$bg-semi-transparent: #C4C4C41A;
-$title-bg-color: #0B153C;
