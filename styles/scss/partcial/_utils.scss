@@ -1,7 +1,10 @@
 .container{
     width: 100%;
-    padding: 20px 70px 10px;
+    padding: 20px 30px 10px;
     box-sizing: border-box;
     background-color: $title-bg-color;
     align-items: center;
+    @media only screen and (min-width: 767px) {
+        padding: 20px 70px 10px;
+    }
 }

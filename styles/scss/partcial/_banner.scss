@@ -1,7 +1,11 @@
 @mixin image-icon{
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 32px;
     object-fit: cover;
+    @media only screen and (min-width: 767px) {
+        width: 80px;
+        height: 64px;
+    }
 }
 
 @mixin btn-custom{
@@ -20,10 +24,8 @@
 .banner{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
     padding: 30px 0px;
-    justify-content: space-between;
     gap: 50px;
     @media only screen and (min-width: 991px) {
         flex-direction: row;
@@ -59,9 +61,11 @@
     &__aside2{
         display: flex;
         flex-direction: column;
-        justify-content: center;
    
         &__fig{
+            display: flex;
+            margin: 0px 20px;
+            height: 274px;
             border-radius: 43px;
             background-color: $primary-color;
             object-fit: cover;
@@ -69,53 +73,79 @@
             justify-content: center;
             min-width: 256px;
             position: relative;
-            
+            @media only screen and (min-width: 767px) {
+                height: auto;
+                margin: 0px 5px;
+                padding: 0 15px;
+            }
             
 
+
             &__main1{
-                width: auto;
+                width: 40px;
+                object-fit: cover;
             }
 
             &__img1{
                 @include image-icon;
                 position: absolute;
-                right: -50px;
-                top: 200px;
+                top: 50%;
+                left: -10px;
+                @media only screen and (min-width: 767px) {
+                    top: 50%;
+                    left: -30px;
+                }
             }
                 
             &__img2{
                 @include image-icon;
                 position: absolute;
-                top: 200px;
-                left: -50px;
+                right: -20px;
+                top: 50%;
+                @media only screen and (min-width: 767px) {
+                    top: 50%;
+                    right: -40px;
+                }
             }
         } 
         
         &__div{
             display: flex;
+            width: 239px;
             padding: 10px;
-            justify-content: start;
             background-color: $bg-full-transparent;
             position: relative;
             bottom: 40px;
-            left: -30px;
+            left: -10px;
             border-radius: 10px;
-            width: auto;
+            @media only screen and (min-width: 767px) {
+                width: 374px;
+                left: -30px;
+            }
 
             &__img{
-                width: 60px;
-                height: 60px;
+                width: 38px;
+                height: 38px;
                 border-radius: 10px;
                 align-items: center;
                 justify-content: center;
                 object-fit: cover;
+                @media only screen and (min-width: 767px) {
+                    width: 60px;
+                    height: 60px;
+                }
             }
-            &__info{
-                margin-left: 20px;
-            }
+            
+            
         }
     }
 
 
 
-} 
+}
+.info{
+    margin-left: 20px;
+    &__p{
+        color: $secondary-color;
+    }
+}
