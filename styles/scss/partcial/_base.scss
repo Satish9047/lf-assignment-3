@@ -1,6 +1,6 @@
 h1{
     font-size: map-get($title-size, small);
-    color: #fff;
+    color: $standard-white-color;
     padding: 20px 0px;
 
     @media only screen and (min-width: 767px) {

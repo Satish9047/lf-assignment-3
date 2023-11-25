@@ -1,0 +1,44 @@
+.section1{
+    
+    &__schedule{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+ 
+    }
+    &__div{
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        gap: 10px;
+        background-color: $dark-blur;
+        padding: 20px 0px;
+        margin: 10px 0px 0px 0px;
+        border-radius: 20px 20px 0px 0px;
+        @media only screen and (min-width: 767px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        &__book{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            &__fig{
+                background-color: $bg-semi-transparent;
+            }
+        }
+
+        &__btn{
+            width: 150px;
+            font-size: 14px;
+            background-color: $primary-color;
+            border: none;
+            border-radius: 10px;
+            color: $standard-white-color;
+        }
+    }
+
+    
+}

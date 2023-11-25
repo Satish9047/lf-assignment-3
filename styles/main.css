@@ -197,7 +197,7 @@ button {
 }
 @media only screen and (min-width: 767px) {
   .banner__aside2__fig {
-    height: auto;
+    height: 532px;
     margin: 0px 5px;
     padding: 0 15px;
   }
@@ -212,6 +212,8 @@ button {
   height: 32px;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #fff;
+  border-radius: 20px;
   position: absolute;
   top: 50%;
   left: -10px;
@@ -233,6 +235,8 @@ button {
   height: 32px;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #fff;
+  border-radius: 20px;
   position: absolute;
   right: -20px;
   top: 50%;
@@ -280,10 +284,81 @@ button {
     height: 60px;
   }
 }
+.banner__div {
+  display: flex;
+  flex-direction: column;
+}
 
 .info {
   margin-left: 20px;
 }
 .info__p {
-  color: rgba(255, 255, 255, 0.6980392157);
+  color: #fff;
+}
+
+.section1__schedule {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section1__div {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(196, 196, 196, 0.0509803922);
+  padding: 20px 0px;
+  margin: 10px 0px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
+}
+@media only screen and (min-width: 767px) {
+  .section1__div {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.section1__div__book {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.section1__div__book__fig {
+  background-color: rgba(196, 196, 196, 0.1019607843);
+}
+.section1__div__btn {
+  width: 150px;
+  font-size: 14px;
+  background-color: #17C2EC;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.section-logo {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  width: 100%;
+  padding: 20px 10px;
+}
+.section-logo__icon {
+  width: 72px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (min-width: 767px) {
+  .section-logo__icon {
+    width: 148px;
+    max-height: 36px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .section-logo__icon {
+    width: 288px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 66px;
+  }
 }/*# sourceMappingURL=main.css.map */

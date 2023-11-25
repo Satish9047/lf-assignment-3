@@ -1,0 +1,28 @@
+
+.section-logo{
+    display: flex;
+    justify-content: space-between;
+    background: $standard-white-color;
+    width: 100%;
+    padding: 20px 10px;
+    
+
+    &__icon{
+        width: 72px;
+        object-fit: cover;
+        
+        @media only screen and (min-width: 767px) {
+            width: 148px;
+            max-height: 36px;
+            object-fit: cover;
+            
+        }
+        @media only screen and (min-width: 991px) {
+            width: 288px;
+            object-fit: cover;
+            max-height: 66px;
+            
+        }
+    }
+    
+}

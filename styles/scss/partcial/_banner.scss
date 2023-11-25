@@ -74,7 +74,7 @@
             min-width: 256px;
             position: relative;
             @media only screen and (min-width: 767px) {
-                height: auto;
+                height: 532px;
                 margin: 0px 5px;
                 padding: 0 15px;
             }
@@ -86,8 +86,12 @@
                 object-fit: cover;
             }
 
+            
+
             &__img1{
                 @include image-icon;
+                background-color: $standard-white-color;
+                border-radius: 20px;
                 position: absolute;
                 top: 50%;
                 left: -10px;
@@ -99,6 +103,8 @@
                 
             &__img2{
                 @include image-icon;
+                background-color: $standard-white-color;
+                border-radius: 20px;
                 position: absolute;
                 right: -20px;
                 top: 50%;
@@ -140,12 +146,17 @@
         }
     }
 
+    &__div{
+        display: flex;
+        flex-direction: column;
+    }
+
 
 
 }
 .info{
     margin-left: 20px;
     &__p{
-        color: $secondary-color;
+        color: $standard-white-color;
     }
 }
