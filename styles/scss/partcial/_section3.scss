@@ -1,0 +1,108 @@
+.section3{
+    width: 100%;
+    &__div{
+        display: flex;
+        flex-direction: column;
+        @media only screen and (min-width: 991px){
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        &__title{
+            @media only screen and (min-width: 991px){
+                width: 50%;
+            }
+        }
+
+        &__p{
+            color: $secondary-color;
+            font-size: 14px;
+            @media only screen and (min-width: 767px){
+                font-size: 19px;
+            }
+            @media only screen and (min-width: 991px){
+                padding: 20px 0px 0px 20%;
+            }
+        }
+    }
+
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        
+        @media only screen and (min-width: 991px){
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        &__main{
+            padding: 20px;
+            background: $bg-semi-transparent;
+            border-radius: 49.896px 149.688px 49.896px 49.896px;
+            display: flex;
+            flex-direction: column;
+            @media only screen and (min-width: 991px){
+                width: 450px;
+                gap: 20px;
+            }
+
+            &__fig{
+                background-color: $bg-semi-transparent;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                @media only screen and (min-width: 991px){
+                    padding: 14px;
+                    width: 100px;
+                }
+
+                &__img{
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
+            &__link{
+                display: flex;
+                align-items: center;
+            }
+    
+        }
+
+        
+
+        &__div{
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            
+
+            @media only screen and (min-width: 767px){
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            @media only screen and (min-width: 991px){
+                gap: 70px;
+                align-items: end;
+            }
+
+            &__card2{
+                padding: 20px;
+                border: 2px solid;
+                border-color: $secondary-color;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                @media only screen and (min-width: 767px){
+                    width: 295px;
+                }
+                @media only screen and (min-width: 991px){
+                    width: 349px;
+                }
+            }
+        }
+    }
+}

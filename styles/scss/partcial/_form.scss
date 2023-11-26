@@ -1,0 +1,51 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-semi-transparent;
+    margin: 62px auto;
+    padding: 0px 0px 20px 0px;
+    gap: 35px;
+    border-radius: 20px;
+    overflow: hidden;
+
+
+    // margin: 62px 70px;
+
+    &__topic{
+        background-color: $bg-semi-transparent;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        color: $standard-white-color;
+    }
+
+    &__info{
+        background-color: $bg-semi-transparent;
+        padding: 5px 10px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    &__check{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 80%;
+        @media only screen and (min-width: 767px){
+            width: 70%;
+        }
+
+        @media only screen and (min-width: 991px) { 
+            flex-direction: row;
+        }
+        &__btn{
+            background-color: $bg-semi-transparent;
+            border: none;
+            color: $primary-color;
+        }
+    }
+}
