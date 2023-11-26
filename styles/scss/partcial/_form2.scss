@@ -1,0 +1,36 @@
+.form2{
+    background-color: $bg-full-transparent;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    border-radius: 20px;
+
+    &__div{
+        background-color: $primary-color;
+        padding: 10px 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__h1{
+            padding: 0px;
+        }
+        &__p{
+            color: $standard-white-color;
+        }
+        &__div{
+
+            &__btn{
+                &__img{
+                    background-color: black;
+                }
+            }
+        }
+    }
+
+
+}

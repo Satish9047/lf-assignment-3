@@ -350,15 +350,20 @@ button {
   display: flex;
   justify-content: left;
   align-items: center;
+  padding: 0px 10px;
 }
 .section1__div__book__fig {
   background-color: rgba(196, 196, 196, 0.1019607843);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
 }
 .section1__div__btn {
   width: 150px;
   font-size: 14px;
   background-color: #17C2EC;
   border: none;
+  margin: 10px;
   border-radius: 10px;
   color: #fff;
 }
@@ -554,6 +559,177 @@ button {
   }
 }
 
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media only screen and (min-width: 768px) {
+  .section4 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+.section4__title {
+  order: 1;
+}
+@media only screen and (min-width: 768px) {
+  .section4__title {
+    order: 0;
+  }
+}
+.section4__div {
+  order: 2;
+  margin-top: 10px; /* Adjust spacing from the title */
+}
+@media only screen and (min-width: 768px) {
+  .section4__div {
+    order: 1;
+    margin-top: 0; /* Reset margin for larger screens */
+    width: 50%; /* Set the desired width */
+  }
+}
+.section4__form {
+  order: 3;
+  margin-top: 10px; /* Adjust spacing from the div */
+}
+@media only screen and (min-width: 768px) {
+  .section4__form {
+    order: 2;
+    margin-top: 0; /* Reset margin for larger screens */
+    width: 40%; /* Set the desired width */
+  }
+}
+.section4__form__label, .section4__form__p, .section4__form__div, .section4__form__btn {
+  margin-top: 10px; /* Adjust spacing between form elements */
+}
+.section4__status {
+  order: 4;
+  text-align: center;
+  margin-top: 20px; /* Adjust spacing from the form */
+}
+.section4__status p {
+  margin-bottom: 5px;
+}
+.section4__status a {
+  text-decoration: underline;
+}
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.section5__fig {
+  position: relative;
+}
+.section5__fig__main-img {
+  margin: 0px auto;
+}
+.section5__fig__div1 {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+.section5__fig__div2 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+.section5__fig__div3 {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+}
+.section5__fig__div4 {
+  position: absolute;
+  top: 25%;
+  right: 30%;
+}
+.section5__fig__div5 {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+}
+.section5__fig__div6 {
+  position: absolute;
+  top: 75%;
+  right: 20%;
+}
+.section5__img {
+  width: 60px;
+}
+
+.section6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section6__div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin: 0px auto;
+}
+@media only screen and (min-width: 991px) {
+  .section6__div2 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.section6__div2__card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(196, 196, 196, 0.5019607843);
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+.section6__div2__card:hover {
+  background-color: #17C2EC;
+}
+.section6__div2__card__fig {
+  display: flex;
+}
+.section6__div2__card__fig__img {
+  width: 70px;
+  border-radius: 15px;
+}
+
+.form2 {
+  background-color: rgba(196, 196, 196, 0.2);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  border-radius: 20px;
+}
+.form2__div {
+  background-color: #17C2EC;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form2__div__h1 {
+  padding: 0px;
+}
+.form2__div__p {
+  color: #fff;
+}
+.form2__div__div__btn__img {
+  background-color: black;
+}
+
 .footer {
   background: #0B153C;
   display: flex;
@@ -566,7 +742,7 @@ button {
 @media only screen and (min-width: 991px) {
   .footer {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 }

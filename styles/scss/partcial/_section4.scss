@@ -1,0 +1,60 @@
+.section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  
+    &__title {
+      order: 1;
+      @media only screen and (min-width: 768px) {
+        order: 0;
+      }
+    }
+  
+    &__div {
+      order: 2;
+      margin-top: 10px; /* Adjust spacing from the title */
+      @media only screen and (min-width: 768px) {
+        order: 1;
+        margin-top: 0; /* Reset margin for larger screens */
+        width: 50%; /* Set the desired width */
+      }
+    }
+  
+    &__form {
+      order: 3;
+      margin-top: 10px; /* Adjust spacing from the div */
+      @media only screen and (min-width: 768px) {
+        order: 2;
+        margin-top: 0; /* Reset margin for larger screens */
+        width: 40%; /* Set the desired width */
+      }
+  
+      &__label,
+      &__p,
+      &__div,
+      &__btn {
+        margin-top: 10px; /* Adjust spacing between form elements */
+      }
+    }
+  
+    &__status {
+      order: 4;
+      text-align: center;
+      margin-top: 20px; /* Adjust spacing from the form */
+  
+      p {
+        margin-bottom: 5px;
+      }
+  
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+  
