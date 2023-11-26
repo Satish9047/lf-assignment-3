@@ -108,13 +108,13 @@ button {
 @media only screen and (min-width: 767px) {
   .header__nav {
     display: none;
-    justify-content: space-between;
   }
 }
 @media only screen and (min-width: 991px) {
   .header__nav {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 }
 .header__nav__links {
@@ -551,5 +551,60 @@ button {
 @media only screen and (min-width: 991px) {
   .section3__cards__div__card2 {
     width: 349px;
+  }
+}
+
+.footer {
+  background: #0B153C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+@media only screen and (min-width: 991px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__nav__links {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (min-width: 767px) {
+  .footer__nav__links {
+    flex-direction: row;
+  }
+}
+.footer__hr {
+  width: 55%;
+  border: 2px solid #17C2EC;
+}
+.footer__fig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer__fig__icon {
+  width: 17px;
+}
+@media only screen and (min-width: 767px) {
+  .footer__fig__icon {
+    width: 31px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .footer__fig__icon {
+    width: 50px;
   }
 }/*# sourceMappingURL=main.css.map */

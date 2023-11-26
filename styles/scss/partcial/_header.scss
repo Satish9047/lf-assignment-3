@@ -1,25 +1,44 @@
-.header {
+@mixin main-title{
     background: $title-bg-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@mixin navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin hr-underline{
+    width: 55%;
+    border: 2px solid $primary-color;
+}
+
+@mixin links{
+    display: flex;
+    gap: 25px;
+}
+
+
+
+.header {
+    @include main-title;
 
     &__nav {
         display: none;
 
         @media only screen and (min-width: 767px) {
             display: none;
-            justify-content: space-between;
         }
 
         @media only screen and (min-width: 991px) {
-            display: flex;
-            justify-content: space-between;
+            @include navbar;
+            flex-direction: row;
         }
 
         &__links {
-            display: flex;
-            gap: 25px;
+            @include links
         }
     }
     &__btn{
@@ -37,8 +56,7 @@
     }
 
     &__hr{
-        width: 55%;
-        border: 2px solid $primary-color;
+        @include hr-underline;
     }
 
     &__menu{

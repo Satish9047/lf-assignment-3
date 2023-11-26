@@ -1,0 +1,47 @@
+.footer{
+    @include main-title;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    @media only screen and (min-width: 991px){
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__nav{
+        @include navbar;
+        &__links{
+            @include links;
+            flex-direction: column;
+            justify-content: center;
+
+            @media only screen and (min-width: 767px){
+                flex-direction: row;
+            }
+    
+        }
+
+    }
+    
+    &__hr{
+        @include hr-underline;
+    }
+
+    &__fig{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        &__icon{
+            width: 17px;
+            @media only screen and (min-width: 767px){
+                width: 31px;
+            }
+            @media only screen and (min-width: 991px){
+                width: 50px;
+            }
+        }
+    }
+}
