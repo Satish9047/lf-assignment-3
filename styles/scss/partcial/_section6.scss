@@ -4,18 +4,32 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 250px;
+
+    &__div1{
+        &__h{
+            color: $standard-black;
+        }
+        &__p{
+            color: $standard-black;
+        }
+    }
+    
 
     &__div2{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         gap: 30px;
-        margin: 0px auto;
+        padding: 20px 0px;
+        width: 400px;
+        
 
     
         @media only screen and (min-width: 991px) {
             flex-direction: row;
             justify-content: space-between;
+            width: auto;
         }
 
 
@@ -37,6 +51,18 @@
                     width: 70px;
                     border-radius: 15px;
                 }
+                &__info{
+                    margin: 5px 10px;
+                    &__p{
+                        font-size: 14px;
+                        color: $standard-black;
+                    }
+                }
+            }
+
+            &__p{
+                padding: 5px 0px;
+                color: $standard-black;
             }
         }
     }

@@ -1,60 +1,102 @@
 .section4 {
     display: flex;
+    padding: 20px 0px;
     flex-direction: column;
-    align-items: flex-start;
-  
-    @media only screen and (min-width: 768px) {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: stretch;
+    @media only screen and (min-width: 991px) {
+      position: relative;
     }
-  
-    &__title {
-      order: 1;
-      @media only screen and (min-width: 768px) {
-        order: 0;
+
+    &__div1{
+      @media only screen and (min-width: 991px) {
+        width: 50%;
       }
-    }
-  
-    &__div {
-      order: 2;
-      margin-top: 10px; /* Adjust spacing from the title */
-      @media only screen and (min-width: 768px) {
-        order: 1;
-        margin-top: 0; /* Reset margin for larger screens */
-        width: 50%; /* Set the desired width */
+
+      &__title{
+        color: $standard-black;
       }
     }
-  
-    &__form {
-      order: 3;
-      margin-top: 10px; /* Adjust spacing from the div */
-      @media only screen and (min-width: 768px) {
-        order: 2;
-        margin-top: 0; /* Reset margin for larger screens */
-        width: 40%; /* Set the desired width */
+
+    &__div2{
+      display: flex;
+      justify-content: center;
+      padding-top: 60px;
+      @media only screen and (min-width: 767px) {
+          justify-content: start;
       }
-  
-      &__label,
-      &__p,
-      &__div,
-      &__btn {
-        margin-top: 10px; /* Adjust spacing between form elements */
+      @media only screen and (min-width: 991px) {
+          position: absolute;
+          right: 10px;
+      }
+
+      &__fig{
+        position: relative;
+        overflow: visible;
+        background-color: $title-bg-color;
+        border-radius: 20px;
+        
+        
+
+        &__img{
+          width: 100%;
+          max-height: 480px;
+          border-radius: 20px;
+        }
+
+        &__small-img{
+          width: 100px;
+          border-radius: 20px;
+          position: absolute;
+          left: -50px;
+          top: -20px;
+        }
+      }
+
+    }
+
+    &__form{
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      gap: 10px;
+      @media only screen and (min-width: 991px) {
+        width: 50%;
+      }
+        &__p{
+          color: $standard-black;
+          
+        }
+
+        &__input{
+          background-color: $bg-semi-transparent;
+        }
+        &__btn{
+          background-color: $primary-color;
+          border: none;
+        }
+
+        &__div{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          @media only screen and (min-width: 767px){
+            flex-direction: row;
+          }
+          &__input{
+            width: 100%;
+            background-color: $bg-semi-transparent;
+          }
+          &__btn{
+            background-color: $primary-color;
+            border: none;
+          }
+
+        
       }
     }
-  
-    &__status {
-      order: 4;
-      text-align: center;
-      margin-top: 20px; /* Adjust spacing from the form */
-  
-      p {
-        margin-bottom: 5px;
-      }
-  
-      a {
-        text-decoration: underline;
-      }
+
+    &__status{
+      display: flex;
+      gap: 10px;
     }
   }
   

@@ -1,10 +1,20 @@
-.container{
+@mixin containers{
     width: 100%;
     padding: 20px 30px 10px;
     box-sizing: border-box;
-    background-color: $title-bg-color;
+    
     align-items: center;
     @media only screen and (min-width: 767px) {
         padding: 20px 70px 10px;
     }
+}
+
+.container{
+    @include containers;
+    background-image: url(../../../assets/image/bg-banner-1.jpg)
+}
+
+.container2{
+    @include containers;
+    background-color: $standard-gray;
 }

@@ -3,6 +3,8 @@
     flex-direction: column;
     gap: 20px;
     align-items: start;
+    position: relative;
+    margin-top: 200px;
     @media only screen and (min-width: 991px){
         flex-direction: row;
         justify-content: space-between;

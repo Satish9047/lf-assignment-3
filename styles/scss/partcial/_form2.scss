@@ -6,6 +6,14 @@
     justify-content: center;
     margin: 0px auto;
     border-radius: 20px;
+    position: absolute;
+    width: 80%;
+    right: 15%;
+    top: -350px;
+    @media only screen and (min-width: 768px) {
+        
+      }
+
 
     &__div{
         background-color: $primary-color;
@@ -15,6 +23,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 95%;
 
         &__h1{
             padding: 0px;
@@ -25,9 +34,7 @@
         &__div{
 
             &__btn{
-                &__img{
-                    background-color: black;
-                }
+                background-color: black;
             }
         }
     }
