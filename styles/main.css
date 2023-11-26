@@ -467,7 +467,7 @@ li {
 @media only screen and (min-width: 991px) {
   .section3__div {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -546,7 +546,7 @@ li {
 }
 @media only screen and (min-width: 991px) {
   .section3__cards__div {
-    gap: 70px;
+    justify-content: space-between;
     align-items: end;
   }
 }
@@ -557,7 +557,6 @@ li {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
 }
 @media only screen and (min-width: 767px) {
   .section3__cards__div__card2 {
@@ -664,6 +663,12 @@ li {
 .section4__status {
   display: flex;
   gap: 10px;
+}
+.section4__status__a {
+  font-size: 20px;
+}
+.section4__status__p {
+  color: black;
 }
 
 .section5 {
@@ -922,6 +927,11 @@ li {
 }
 .form2__div__div__btn {
   background-color: black;
+  border-radius: 0px 20px 20px 0px;
+  border: none;
+}
+.form2__div__div__btn__img {
+  width: 20px;
 }
 
 .footer {

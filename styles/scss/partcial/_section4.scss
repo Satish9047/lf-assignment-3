@@ -97,6 +97,12 @@
     &__status{
       display: flex;
       gap: 10px;
+      &__a{
+        font-size: 20px;
+      }
+      &__p{
+        color: $standard-black;
+      }
     }
   }
   

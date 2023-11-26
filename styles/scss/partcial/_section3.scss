@@ -5,7 +5,7 @@
         flex-direction: column;
         @media only screen and (min-width: 991px){
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
         &__title{
@@ -84,7 +84,7 @@
                 justify-content: space-between;
             }
             @media only screen and (min-width: 991px){
-                gap: 70px;
+                justify-content: space-between;
                 align-items: end;
             }
 
@@ -95,7 +95,6 @@
                 border-radius: 20px;
                 display: flex;
                 flex-direction: column;
-                gap: 50px;
 
                 @media only screen and (min-width: 767px){
                     width: 295px;
