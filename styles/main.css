@@ -550,6 +550,9 @@ li {
   justify-content: center;
   align-items: center;
 }
+.section3__cards__main__h {
+  color: #17C2EC;
+}
 .section3__cards__div {
   display: flex;
   flex-direction: column;
