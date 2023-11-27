@@ -32,14 +32,26 @@
             color: $standard-white-color;
         }
         &__div{
+            display: flex;
+            gap: 0px;
+
+            &__input{
+                border-radius: 20px 0px 0px 20px;
+                margin-right: 0px;
+                padding-right: 0px;
+                border: none;
+                width: 98%;
+            }
 
 
             &__btn{
                 background-color: black;
                 border-radius: 0px 20px 20px 0px;
                 border: none;
+                padding:10px;
+                margin: 0px;
                 &__img{
-                    width: 20px;
+                    width: 16px;
                 }
             }
         }

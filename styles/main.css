@@ -880,7 +880,7 @@ li {
   justify-content: space-around;
   gap: 30px;
   padding: 20px 0px;
-  width: 400px;
+  width: auto;
 }
 @media only screen and (min-width: 991px) {
   .section6__div2 {
@@ -891,14 +891,22 @@ li {
 }
 .section6__div2__card {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   background-color: rgba(196, 196, 196, 0.5019607843);
   border-radius: 20px;
+  margin: 0px auto;
   padding: 20px;
   overflow: hidden;
+  width: 100%;
 }
 .section6__div2__card:hover {
   background-color: #17C2EC;
+}
+@media only screen and (max-width: 991px) {
+  .section6__div2__card {
+    max-width: 305px;
+  }
 }
 .section6__div2__card__fig {
   display: flex;
@@ -949,13 +957,26 @@ li {
 .form2__div__p {
   color: #fff;
 }
+.form2__div__div {
+  display: flex;
+  gap: 0px;
+}
+.form2__div__div__input {
+  border-radius: 20px 0px 0px 20px;
+  margin-right: 0px;
+  padding-right: 0px;
+  border: none;
+  width: 98%;
+}
 .form2__div__div__btn {
   background-color: black;
   border-radius: 0px 20px 20px 0px;
   border: none;
+  padding: 10px;
+  margin: 0px;
 }
 .form2__div__div__btn__img {
-  width: 20px;
+  width: 16px;
 }
 
 .footer {

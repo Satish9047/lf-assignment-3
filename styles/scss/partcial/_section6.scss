@@ -22,7 +22,7 @@
         justify-content: space-around;
         gap: 30px;
         padding: 20px 0px;
-        width: 400px;
+        width: auto;
         
 
     
@@ -35,13 +35,18 @@
 
         &__card{
             display: flex;
+            justify-content: center;
             flex-direction: column;
             background-color: $bg-gray-transparent;
             border-radius: 20px;
+            margin: 0px auto;
             padding: 20px;
             overflow: hidden;
+            width: 100%;
             &:hover{
                 background-color: $primary-color;
+            }@media only screen and (max-width: 991px){
+                max-width: 305px;
             }
 
             &__fig{
