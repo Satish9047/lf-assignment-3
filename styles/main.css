@@ -9,7 +9,7 @@
   padding: 20px 30px 10px;
   box-sizing: border-box;
   align-items: center;
-  background-image: url(../../../assets/image/bg-banner-1.jpg);
+  background-image: url(../assets/image/bg-banner-1.jpg);
 }
 @media only screen and (min-width: 767px) {
   .container {
