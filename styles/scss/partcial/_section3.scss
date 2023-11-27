@@ -30,6 +30,8 @@
     &__cards{
         display: flex;
         flex-direction: column;
+        gap: 20px;
+        padding: 20px 0px;
         
         @media only screen and (min-width: 991px){
             flex-direction: row;
@@ -42,19 +44,29 @@
             background: $bg-semi-transparent;
             border-radius: 49.896px 149.688px 49.896px 49.896px;
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
+            min-width: 276;
+            @media only screen and (min-width: 767px){
+                min-width: 448px;
+                max-width: 498px;
+            }
             @media only screen and (min-width: 991px){
                 width: 450px;
+                height: 498px;
                 gap: 20px;
             }
 
             &__fig{
                 background-color: $bg-semi-transparent;
+                padding: 20px;
                 border-radius: 20px;
+                align-items: start;
                 display: flex;
                 justify-content: center;
                 @media only screen and (min-width: 991px){
-                    padding: 14px;
+                    
                     width: 100px;
                 }
 
@@ -66,7 +78,9 @@
 
             &__link{
                 display: flex;
+                justify-content: center;
                 align-items: center;
+                
             }
     
         }
@@ -95,12 +109,18 @@
                 border-radius: 20px;
                 display: flex;
                 flex-direction: column;
+            
 
                 @media only screen and (min-width: 767px){
                     width: 295px;
                 }
                 @media only screen and (min-width: 991px){
                     width: 349px;
+                }
+
+                &__img{
+                    padding: 20px solid;
+                    background-color: $bg-semi-transparent;
                 }
             }
         }

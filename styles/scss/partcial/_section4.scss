@@ -74,6 +74,10 @@
           border: none;
         }
 
+        &__label{
+          font-size: 24px;
+        }
+
         &__div{
           display: flex;
           flex-direction: column;

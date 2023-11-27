@@ -378,6 +378,9 @@ li {
   border-radius: 10px;
   color: #fff;
 }
+.section1__div__info {
+  margin-left: 50px;
+}
 
 .section2 {
   display: flex;
@@ -492,6 +495,8 @@ li {
 .section3__cards {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px;
 }
 @media only screen and (min-width: 991px) {
   .section3__cards {
@@ -505,23 +510,34 @@ li {
   background: rgba(196, 196, 196, 0.1019607843);
   border-radius: 49.896px 149.688px 49.896px 49.896px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  min-width: 276;
+}
+@media only screen and (min-width: 767px) {
+  .section3__cards__main {
+    min-width: 448px;
+    max-width: 498px;
+  }
 }
 @media only screen and (min-width: 991px) {
   .section3__cards__main {
     width: 450px;
+    height: 498px;
     gap: 20px;
   }
 }
 .section3__cards__main__fig {
   background-color: rgba(196, 196, 196, 0.1019607843);
+  padding: 20px;
   border-radius: 20px;
+  align-items: start;
   display: flex;
   justify-content: center;
 }
 @media only screen and (min-width: 991px) {
   .section3__cards__main__fig {
-    padding: 14px;
     width: 100px;
   }
 }
@@ -531,6 +547,7 @@ li {
 }
 .section3__cards__main__link {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .section3__cards__div {
@@ -567,6 +584,10 @@ li {
   .section3__cards__div__card2 {
     width: 349px;
   }
+}
+.section3__cards__div__card2__img {
+  padding: 20px solid;
+  background-color: rgba(196, 196, 196, 0.1019607843);
 }
 
 .section4 {
@@ -641,6 +662,9 @@ li {
 .section4__form__btn {
   background-color: #17C2EC;
   border: none;
+}
+.section4__form__label {
+  font-size: 24px;
 }
 .section4__form__div {
   display: flex;
