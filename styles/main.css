@@ -97,6 +97,7 @@ a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6980392157);
   font-style: normal;
+  font-size: 24px;
   font-weight: 500;
   line-height: normal;
 }
@@ -108,10 +109,16 @@ li {
   list-style-type: none;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 20pxpx;
+  font-size: 32px;
 }
 .header__nav {
   display: none;
@@ -716,7 +723,6 @@ li {
   align-items: center;
   text-align: left;
   background-color: rgba(196, 196, 196, 0.2);
-  display: flex;
   border-radius: 10px;
   position: absolute;
   color: #17C2EC;
@@ -739,7 +745,6 @@ li {
   align-items: center;
   text-align: left;
   background-color: rgba(196, 196, 196, 0.2);
-  display: flex;
   border-radius: 10px;
   position: absolute;
   color: #17C2EC;
@@ -762,7 +767,6 @@ li {
   align-items: center;
   text-align: left;
   background-color: rgba(196, 196, 196, 0.2);
-  display: flex;
   border-radius: 10px;
   position: absolute;
   color: #17C2EC;
@@ -785,13 +789,12 @@ li {
   align-items: center;
   text-align: left;
   background-color: rgba(196, 196, 196, 0.2);
-  display: flex;
   border-radius: 10px;
   position: absolute;
   color: #17C2EC;
   font-size: 8px;
   top: 35%;
-  right: 15%;
+  right: 12%;
 }
 @media only screen and (min-width: 767px) {
   .section5__div__fig__div4 {
@@ -808,13 +811,12 @@ li {
   align-items: center;
   text-align: left;
   background-color: rgba(196, 196, 196, 0.2);
-  display: flex;
   border-radius: 10px;
   position: absolute;
   color: #17C2EC;
   font-size: 8px;
   top: 55%;
-  right: 10%;
+  right: 8%;
 }
 @media only screen and (min-width: 767px) {
   .section5__div__fig__div5 {
@@ -831,7 +833,6 @@ li {
   align-items: center;
   text-align: left;
   background-color: rgba(196, 196, 196, 0.2);
-  display: flex;
   border-radius: 10px;
   position: absolute;
   color: #17C2EC;
@@ -851,15 +852,18 @@ li {
 }
 .section5__img {
   width: 30px;
+  transform: scale(2);
 }
 @media only screen and (min-width: 767px) {
   .section5__img {
     width: 60px;
+    transform: scale(2);
   }
 }
 @media only screen and (min-width: 991px) {
   .section5__img {
     width: 100px;
+    transform: scale(1.8);
   }
 }
 
@@ -986,6 +990,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 20pxpx;
   flex-direction: column;
   gap: 20px;
   align-items: start;

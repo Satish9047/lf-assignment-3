@@ -4,7 +4,6 @@
     align-items: center;
     text-align: left;
     background-color: $bg-full-transparent;
-    display: flex;
     border-radius: 10px;
     position: absolute;
     color: $primary-color;
@@ -55,13 +54,13 @@
             &__div4{
                 @include corona-sym;
                 top: 35%;
-                right: 15%;
+                right: 12%;
                 
             }
             &__div5{
                 @include corona-sym;
                 top: 55%;
-                right: 10%;
+                right: 8%;
                 
             }
             &__div6{
@@ -76,11 +75,15 @@
 
     &__img{
         width: 30px;
+        transform: scale(2);
         @media only screen and (min-width: 767px){
             width: 60px;
+            transform: scale(2);
+            
         }
         @media only screen and (min-width: 991px){
             width: 100px;
+            transform: scale(1.8);
         }
     }
 
