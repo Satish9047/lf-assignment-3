@@ -1,5 +1,7 @@
 .section3{
     width: 100%;
+    display: flex;
+    justify-content: center;
     &__div{
         display: flex;
         flex-direction: column;
@@ -94,6 +96,9 @@
             display: flex;
             flex-direction: column;
             background-color: transparent;
+            width: max-content;
+            gap: 20px;
+            flex-wrap: wrap;
             
 
             @media only screen and (min-width: 767px){
@@ -115,10 +120,10 @@
             
 
                 @media only screen and (min-width: 767px){
-                    width: 295px;
+                    min-width: 400px;
                 }
                 @media only screen and (min-width: 991px){
-                    width: 349px;
+                    
                 }
 
                 &__img{

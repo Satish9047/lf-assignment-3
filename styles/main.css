@@ -97,12 +97,17 @@ a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6980392157);
   font-style: normal;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 500;
   line-height: normal;
 }
 a:hover {
   color: #fff;
+}
+@media only screen and (min-width: 767px) {
+  a {
+    font-size: 20px;
+  }
 }
 
 li {
@@ -469,6 +474,8 @@ body {
 
 .section3 {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .section3__div {
   display: flex;
@@ -564,6 +571,10 @@ body {
   display: flex;
   flex-direction: column;
   background-color: transparent;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 @media only screen and (min-width: 767px) {
   .section3__cards__div {
@@ -587,12 +598,7 @@ body {
 }
 @media only screen and (min-width: 767px) {
   .section3__cards__div__card2 {
-    width: 295px;
-  }
-}
-@media only screen and (min-width: 991px) {
-  .section3__cards__div__card2 {
-    width: 349px;
+    min-width: 400px;
   }
 }
 .section3__cards__div__card2__img {
@@ -656,7 +662,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  gap: 10px;
+  gap: 20px;
 }
 @media only screen and (min-width: 991px) {
   .section4__form {
@@ -712,6 +718,7 @@ body {
   text-align: center;
 }
 .section5__div__fig {
+  text-align: left;
   position: relative;
 }
 .section5__div__fig__main-img {
