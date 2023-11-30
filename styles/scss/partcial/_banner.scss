@@ -53,7 +53,9 @@
         &__btn2{
             background-color: #C4C4C41A;
             margin-left: 5%;
+            // border-color: $primary-color;
             @include btn-custom;
+            border: 1px solid $primary-color;
         }
         
     }
